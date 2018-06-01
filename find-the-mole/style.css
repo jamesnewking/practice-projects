@@ -8,7 +8,6 @@ body {
     align-content: center;
     background-size: cover;
     background-image: url(circusbackground.jpg);
-    background-attachment: fixed;
     background-position: center;
     background-color: black;
     background-repeat: no-repeat;
@@ -30,6 +29,10 @@ body {
     position: relative;
     left: 84%;
     bottom: 46px;
+    border-radius: 4px;
+    background-color: yellow;
+    border: 1px solid red;
+    color: red;
 }
 
 .container {
@@ -37,21 +40,27 @@ body {
     position: relative;
     left: 17vw;
     width: 31vw;
+    bottom: 18vw;
 }
 .container2 {
     width: 31vw;
     height: 27vw;
     left: 17vw;
+    bottom: 17vw;
     position: relative;
 
 
 }
 .score {
-    background-color: #c39005;
-    height: 2vw;
+    height: 36vh;
+    display: inline-block;
+    color: yellow;
+    text-align: center;
 }
 .clownBox {
     height: 10vw;
+    position: relative;
+    left: 53%;
     width: 10vw;
     background-color: red;
     display: inline-block;
@@ -66,9 +75,16 @@ body {
     position: relative;
     height: 10vw;
     width: 10vw;
-    display: inline-block;
     align-content: center;
     background-size: cover;
     background-image: url(Untitled-1.png);
     background-position: center;
-    bottom: 116%;}
+    left: 53%;
+    bottom: 116%;
+    display: none;
+}
+
+h1 {
+    position: relative;
+    bottom: 60px;
+}
