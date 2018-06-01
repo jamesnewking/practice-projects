@@ -34,17 +34,41 @@ body {
 
 .container {
 
-    background-color: lime;
     position: relative;
     left: 17vw;
+    width: 31vw;
+}
+.container2 {
+    width: 31vw;
+    height: 27vw;
+    left: 17vw;
+    position: relative;
+
+
 }
 .score {
     background-color: #c39005;
     height: 2vw;
 }
 .clownBox {
-    height: 3vw;
-    width: 3vw;
+    height: 10vw;
+    width: 10vw;
     background-color: red;
+    display: inline-block;
+    align-content: center;
+    background-size: cover;
+    background-image: url(box.jpg);
+    background-position: center;
+    }
 
-}
+#id0, #id1, #id2, #id3, #id4, #id5, #id6, #id7, #id8 {
+
+    position: relative;
+    height: 10vw;
+    width: 10vw;
+    display: inline-block;
+    align-content: center;
+    background-size: cover;
+    background-image: url(Untitled-1.png);
+    background-position: center;
+    bottom: 116%;}
