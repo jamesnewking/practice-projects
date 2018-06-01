@@ -1,10 +1,14 @@
 $(document).ready(function() {
     $('.start').on('click', startGame);
+    gameTime()
 });
 
 var gameOverTrigger = 0;
 var startGameTrigger = 0;
-var pointCounter =0;
+
+var score = $('.scoreNumber').text();
+var resetButton = $('#reset');
+
 
 function startGame() {
     if (gameOverTrigger === 0 && startGameTrigger === 0) {
@@ -35,3 +39,17 @@ function showMole(moleName, moleTime) {
     console.log(moleName + " " + moleTime);
 
 }
+
+function gameTime() {
+    setTimeout(stayTime, 5000);
+}
+
+function stayTime() {
+    //after time out all board can not click
+
+    $('.container').off("click");
+    console.log('game finish');
+
+    finishModel();
+}
+
