@@ -63,7 +63,6 @@ body {
 
 #id0, #id1, #id2, #id3, #id4, #id5, #id6, #id7, #id8 {
 
-<<<<<<< HEAD
 }
 
 
@@ -97,14 +96,3 @@ body {
     transform: translate(-50%, -50%);
 
   }
-=======
-    position: relative;
-    height: 10vw;
-    width: 10vw;
-    display: inline-block;
-    align-content: center;
-    background-size: cover;
-    background-image: url(Untitled-1.png);
-    background-position: center;
-    bottom: 116%;}
->>>>>>> 708b09a22273469ccbf082e72ce46618ff0df664
