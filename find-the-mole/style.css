@@ -71,7 +71,6 @@ body {
     }
 
 #id0, #id1, #id2, #id3, #id4, #id5, #id6, #id7, #id8 {
-
     position: relative;
     height: 10vw;
     width: 10vw;
@@ -88,3 +87,28 @@ h1 {
     position: relative;
     bottom: 60px;
 }
+
+
+#modelShadow {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.5);
+    display: none;
+    z-index: 100;
+  }
+
+  #modelBody {
+    position: fixed;
+    left: 72%;
+    top: 80%;
+    width:50%;
+    min-width: 50%;
+    min-height: 50%;
+    background-image: url(images/cry.gif);
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+
+  }
