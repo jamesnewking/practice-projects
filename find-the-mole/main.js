@@ -4,11 +4,14 @@ $(document).ready(function() {
 
 var gameOverTrigger = 0;
 var startGameTrigger = 0;
+var pointCounter =0;
+
 function startGame() {
     if (gameOverTrigger === 0 && startGameTrigger === 0) {
         randomMoleSelector();
     }
 }
+
 
 function randomMoleSelector() {
     var randomMoleArray = [0, 1, 2, 3, 4, 5, 6, 7, 8];
@@ -30,4 +33,5 @@ function randomMoleTimer() {
 
 function showMole(moleName, moleTime) {
     console.log(moleName + " " + moleTime);
+
 }
