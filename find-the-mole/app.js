@@ -5,6 +5,6 @@ function gameTime() {
 
 function stayTime() {
     console.log('game finish');
-    setTimeout(stayout, 1000);
+  
 }
 
