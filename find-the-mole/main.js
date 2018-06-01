@@ -4,8 +4,15 @@ $(document).ready(function() {
 
 var gameOverTrigger = 0;
 var startGameTrigger = 0;
+var pointCounter =0;
+
 function startGame() {
     if (gameOverTrigger === 0 && startGameTrigger === 0) {
         console.log("Thanos did nothing wrong.")
     }
+}
+
+function showMole(){
+    $(this).addClass('pennyWise');
+    
 }
