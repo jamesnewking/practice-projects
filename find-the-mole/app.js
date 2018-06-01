@@ -30,29 +30,7 @@ function reset() {
 
 
 //need add modal css and insert a pic for modal
-// #modelShadow {
-//     position: fixed;
-//     left: 0;
-//     top: 0;
-//     width: 100vw;
-//     height: 100vh;
-//     background-color: rgba(0,0,0,.5);
-//     display: none;
-//     z-index: 100;
-//   }
 
-//   #modelBody {
-//     position: fixed;
-//     left: 72%;
-//     top: 80%;
-//     width:50%;
-//     min-width: 50%;
-//     min-height: 50%;
-//     background-image: url(images/xx.gif);
-//     background-repeat: no-repeat;
-//     transform: translate(-50%, -50%);
-
-//   }
 function finishModel() {
         $('#modelShadow').css('display', 'block');
         setTimeout(function() {
