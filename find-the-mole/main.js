@@ -1,18 +1,21 @@
 $(document).ready(function() {
     $('.start').on('click', startGame);
-    gameTime()
+    //gameTime()
 });
 
 var gameOverTrigger = 0;
 var startGameTrigger = 0;
 
-var score = $('.scoreNumber').text();
+var score = 100;
 var resetButton = $('#reset');
-
+var ouchSound = new Audio('ouch.mp3');
 
 function startGame() {
     if (gameOverTrigger === 0 && startGameTrigger === 0) {
-        randomMoleSelector();
+        debugger;
+        setInterval( function(){randomMoleSelector()} , 1000);
+
+        //setTimeout( clearInterval(playShortTime), 15000);
     }
 }
 
@@ -23,7 +26,7 @@ function randomMoleSelector() {
         var randomMoleNum = randomMoleArray[Math.floor((Math.random() * randomMoleArray.length))];
         var moleIndex = randomMoleArray.indexOf(randomMoleNum);
         randomMoleArray.splice(moleIndex, 1);
-        var randomMoleName = "pennyWise" + randomMoleNum;
+        var randomMoleName = "#id" + randomMoleNum;
         var moleAppearTime = randomMoleTimer();
         showMole(randomMoleName, moleAppearTime);
     }
@@ -36,7 +39,22 @@ function randomMoleTimer() {
 }
 
 function showMole(moleName, moleTime) {
+
+    setTimeout( function(){hitClown(moleName)} , moleTime);
+    setTimeout( function(){$(moleName).removeClass('pennyWise')} , moleTime+1000);
+
     console.log(moleName + " " + moleTime);
+
+}
+
+function hitClown(moleName){
+    $(moleName).addClass('pennyWise');
+    $(moleName).on('click',function(){
+        $(moleName).off('click');
+        score = score +100;
+        $('.scoreNumber').text(score);
+        ouchSound.play();
+    })
 
 }
 

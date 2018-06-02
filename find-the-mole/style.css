@@ -4,7 +4,7 @@ html {
     font-family: 'Luckiest Guy', cursive;
 }
 body {
-    margin: 100;
+
     align-content: center;
     background-size: cover;
     background-image: url(circusbackground.jpg);
@@ -71,7 +71,8 @@ body {
     background-position: center;
     }
 
-#id0, #id1, #id2, #id3, #id4, #id5, #id6, #id7, #id8 {
+
+.pennyWise {
     position: relative;
     height: 10vw;
     width: 10vw;
@@ -79,10 +80,12 @@ body {
     background-size: cover;
     background-image: url(Untitled-1.png);
     background-position: center;
-    left: 53%;
-    bottom: 116%;
-    display: none;
+
 }
+
+/* .noShow {
+    display: none;
+} */
 
 h1 {
     position: relative;
