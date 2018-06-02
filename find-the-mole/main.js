@@ -1,5 +1,7 @@
 $(document).ready(function() {
-    $('.start').on('click', startGame);
+    scarySound.play();
+    $('h2').on('click',function(){scarySound.play()});
+    $('.clownBox').on('click', startGame);
     //gameTime()
 });
 
@@ -9,10 +11,12 @@ var startGameTrigger = 0;
 var score = 100;
 var resetButton = $('#reset');
 var ouchSound = new Audio('ouch.mp3');
+var scarySound = new Audio('clown-laugh.wav');
 
 function startGame() {
+    $('.clownBox').off('click');
     if (gameOverTrigger === 0 && startGameTrigger === 0) {
-        debugger;
+        $('.clownBox').css("background-image","url()");
         setInterval( function(){randomMoleSelector()} , 1000);
 
         //setTimeout( clearInterval(playShortTime), 15000);
